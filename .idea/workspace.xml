@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa06dd36-4a47-40ec-a9a1-3323e280da0e" name="Default Changelist" comment="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added">
+      <change afterPath="$PROJECT_DIR$/.idea/LearnigMERN.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/musta.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/models/exercise.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/routes/exercises.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/backend/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-mern/public/robots.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1Wn1io82XCZNfo4lCSxexP6EZY4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/learn-mern/backend" />
+    <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v10.16.0-linux-x64/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/learn-mern/backend" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa06dd36-4a47-40ec-a9a1-3323e280da0e" name="Default Changelist" comment="" />
+      <created>1579770674815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579770674815</updated>
+      <workItem from="1579770676241" duration="3755000" />
+      <workItem from="1580006779995" duration="1625000" />
+      <workItem from="1580014074268" duration="9286000" />
+      <workItem from="1580026850504" duration="6628000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="UpdateCopyrightCheckinHandler">
+    <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added" />
+    <option name="LAST_COMMIT_MESSAGE" value="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="205" y="278" width="800" height="677" key="#Usage_Scope" timestamp="1580026794568">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="205" y="278" width="800" height="677" key="#Usage_Scope/67.27.1213.997@67.27.1213.997" timestamp="1580026794568" />
+    <state x="67" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580022383100">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="67" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1213.997@67.27.1213.997" timestamp="1580022383100" />
+    <state x="139" y="329" width="559" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580018033278">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="139" y="329" width="559" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1213.997@67.27.1213.997" timestamp="1580018033278" />
+    <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580035260828">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1580035260828" />
+    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580035790375">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580035790375" />
+    <state x="451" y="282" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579773047308">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="451" y="282" width="424" height="484" key="FileChooserDialogImpl/67.27.1213.997@67.27.1213.997" timestamp="1579773047308" />
+    <state width="1190" height="252" key="GridCell.Tab.0.bottom" timestamp="1580035213250">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="252" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1580035213250" />
+    <state width="1190" height="252" key="GridCell.Tab.0.center" timestamp="1580035213248">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="252" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1580035213248" />
+    <state width="1190" height="252" key="GridCell.Tab.0.left" timestamp="1580035213247">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="252" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1580035213247" />
+    <state width="1190" height="252" key="GridCell.Tab.0.right" timestamp="1580035213249">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="252" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1580035213249" />
+    <state x="67" y="193" width="900" height="730" key="SettingsEditor" timestamp="1580026807774">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="67" y="193" width="900" height="730" key="SettingsEditor/67.27.1213.997@67.27.1213.997" timestamp="1580026807774" />
+    <state x="393" y="336" width="550" height="377" key="jetbrains.nodejs.interpreters-dialog" timestamp="1579772921916">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="393" y="336" width="550" height="377" key="jetbrains.nodejs.interpreters-dialog/67.27.1213.997@67.27.1213.997" timestamp="1579772921916" />
+    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1580035309575">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup/67.27.1213.997@67.27.1213.997" timestamp="1580035309575" />
+  </component>
+</project>
