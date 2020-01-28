@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa06dd36-4a47-40ec-a9a1-3323e280da0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/App.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/components/create-exercise.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/components/edit-exercise.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/components/exercises-list.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/components/navbar.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/serviceWorker.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-mern/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/musta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/musta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-mern/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-mern/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-exercise.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/create-exercise.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" afterDir="false" />
     </list>
     <list id="d370a355-04ad-4f6b-bcb3-cc62e66832f2" name="Unnecessary" comment="">
       <change beforePath="$PROJECT_DIR$/learn-mern/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/backend/.env" afterDir="false" />
@@ -72,11 +59,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/learn-mern/src/components" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/learn-mern/backend/server.js" />
     <property name="nodejs_interpreter_path" value="$APPLICATION_CONFIG_DIR$/node/node-v10.16.0-linux-x64/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -84,6 +72,14 @@
       <recent name="$PROJECT_DIR$/learn-mern2" />
       <recent name="$PROJECT_DIR$/learn-mern/backend" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="NodeJSConfigurationType" path-to-node="node" path-to-js-file="$PROJECT_DIR$/learn-mern/backend/server.js">
+      <method v="2" />
+    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" path-to-node="node" nameIsGenerated="true" path-to-js-file="learn-mern/backend/server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -100,7 +96,11 @@
       <workItem from="1580006779995" duration="1625000" />
       <workItem from="1580014074268" duration="9286000" />
       <workItem from="1580026850504" duration="6919000" />
-      <workItem from="1580092167439" duration="14735000" />
+      <workItem from="1580092167439" duration="14947000" />
+      <workItem from="1580178493380" duration="3526000" />
+      <workItem from="1580186349048" duration="6071000" />
+      <workItem from="1580198102098" duration="2414000" />
+      <workItem from="1580201490931" duration="1684000" />
     </task>
     <task id="LOCAL-00001" summary="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added">
       <created>1580036099248</created>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580036099248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Web app added using React :: no description for now">
+      <created>1580123247833</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580123247833</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +144,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added" />
-    <option name="LAST_COMMIT_MESSAGE" value="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added" />
+    <MESSAGE value="Web app added using React :: no description for now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Web app added using React :: no description for now" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -147,14 +155,18 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="205" y="278" width="800" height="677" key="#Usage_Scope/67.27.1213.997@67.27.1213.997" timestamp="1580026794568" />
-    <state x="67" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580022383100">
+    <state x="67" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580197383026">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="67" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1213.997@67.27.1213.997" timestamp="1580022383100" />
+    <state x="67" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1213.997@67.27.1213.997" timestamp="1580197383026" />
     <state x="139" y="329" width="559" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1580018033278">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="139" y="329" width="559" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1213.997@67.27.1213.997" timestamp="1580018033278" />
+    <state x="392" y="232" width="424" height="584" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1580197307556">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state x="392" y="232" width="424" height="584" key="#com.intellij.ide.macro.MacrosDialog/67.27.1213.997@67.27.1213.997" timestamp="1580197307556" />
     <state x="178" y="243" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1580119913471">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
@@ -163,34 +175,82 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1580035260828" />
-    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580036099008">
+    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580123247727">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580036099008" />
-    <state x="167" y="125" width="1013" height="799" key="DiffContextDialog" timestamp="1580097045304">
+    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580123247727" />
+    <state x="167" y="125" width="1013" height="799" key="DiffContextDialog" timestamp="1580201593910">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="167" y="125" width="1013" height="799" key="DiffContextDialog/67.27.1213.997@67.27.1213.997" timestamp="1580097045304" />
-    <state x="451" y="282" width="424" height="484" key="FileChooserDialogImpl" timestamp="1579773047308">
+    <state x="167" y="125" width="1013" height="799" key="DiffContextDialog/67.27.1213.997@67.27.1213.997" timestamp="1580201593910" />
+    <state x="451" y="282" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580197334224">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="451" y="282" width="424" height="484" key="FileChooserDialogImpl/67.27.1213.997@67.27.1213.997" timestamp="1579773047308" />
-    <state width="1190" height="252" key="GridCell.Tab.0.bottom" timestamp="1580035213250">
+    <state x="451" y="282" width="424" height="484" key="FileChooserDialogImpl/67.27.1213.997@67.27.1213.997" timestamp="1580197334224" />
+    <state width="1190" height="311" key="GridCell.Tab.0.bottom" timestamp="1580198088618">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1190" height="252" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1580035213250" />
-    <state width="1190" height="252" key="GridCell.Tab.0.center" timestamp="1580035213248">
+    <state width="1190" height="311" key="GridCell.Tab.0.bottom/67.27.1213.997@67.27.1213.997" timestamp="1580198088618" />
+    <state width="1190" height="311" key="GridCell.Tab.0.center" timestamp="1580198088617">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1190" height="252" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1580035213248" />
-    <state width="1190" height="252" key="GridCell.Tab.0.left" timestamp="1580035213247">
+    <state width="1190" height="311" key="GridCell.Tab.0.center/67.27.1213.997@67.27.1213.997" timestamp="1580198088617" />
+    <state width="1190" height="311" key="GridCell.Tab.0.left" timestamp="1580198088615">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1190" height="252" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1580035213247" />
-    <state width="1190" height="252" key="GridCell.Tab.0.right" timestamp="1580035213249">
+    <state width="1190" height="311" key="GridCell.Tab.0.left/67.27.1213.997@67.27.1213.997" timestamp="1580198088615" />
+    <state width="1190" height="311" key="GridCell.Tab.0.right" timestamp="1580198088617">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state width="1190" height="252" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1580035213249" />
+    <state width="1190" height="311" key="GridCell.Tab.0.right/67.27.1213.997@67.27.1213.997" timestamp="1580198088617" />
+    <state width="1190" height="311" key="GridCell.Tab.1.bottom" timestamp="1580198088618">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.1.bottom/67.27.1213.997@67.27.1213.997" timestamp="1580198088618" />
+    <state width="1190" height="311" key="GridCell.Tab.1.center" timestamp="1580198088618">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.1.center/67.27.1213.997@67.27.1213.997" timestamp="1580198088618" />
+    <state width="1190" height="311" key="GridCell.Tab.1.left" timestamp="1580198088618">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.1.left/67.27.1213.997@67.27.1213.997" timestamp="1580198088618" />
+    <state width="1190" height="311" key="GridCell.Tab.1.right" timestamp="1580198088618">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.1.right/67.27.1213.997@67.27.1213.997" timestamp="1580198088618" />
+    <state width="1190" height="311" key="GridCell.Tab.2.bottom" timestamp="1580198088619">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.2.bottom/67.27.1213.997@67.27.1213.997" timestamp="1580198088619" />
+    <state width="1190" height="311" key="GridCell.Tab.2.center" timestamp="1580198088619">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.2.center/67.27.1213.997@67.27.1213.997" timestamp="1580198088619" />
+    <state width="1190" height="311" key="GridCell.Tab.2.left" timestamp="1580198088619">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.2.left/67.27.1213.997@67.27.1213.997" timestamp="1580198088619" />
+    <state width="1190" height="311" key="GridCell.Tab.2.right" timestamp="1580198088619">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.2.right/67.27.1213.997@67.27.1213.997" timestamp="1580198088619" />
+    <state width="1190" height="311" key="GridCell.Tab.3.bottom" timestamp="1580198088620">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.3.bottom/67.27.1213.997@67.27.1213.997" timestamp="1580198088620" />
+    <state width="1190" height="311" key="GridCell.Tab.3.center" timestamp="1580198088620">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.3.center/67.27.1213.997@67.27.1213.997" timestamp="1580198088620" />
+    <state width="1190" height="311" key="GridCell.Tab.3.left" timestamp="1580198088619">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.3.left/67.27.1213.997@67.27.1213.997" timestamp="1580198088619" />
+    <state width="1190" height="311" key="GridCell.Tab.3.right" timestamp="1580198088620">
+      <screen x="67" y="27" width="1213" height="997" />
+    </state>
+    <state width="1190" height="311" key="GridCell.Tab.3.right/67.27.1213.997@67.27.1213.997" timestamp="1580198088620" />
     <state x="67" y="193" width="900" height="730" key="SettingsEditor" timestamp="1580026807774">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
@@ -199,25 +259,25 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="517" y="442" width="303" height="164" key="VCS.ChangelistChooser/67.27.1213.997@67.27.1213.997" timestamp="1580036369147" />
-    <state x="268" y="260" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580036101736">
+    <state x="268" y="260" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1580123249631">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="268" y="260" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1213.997@67.27.1213.997" timestamp="1580036101736" />
+    <state x="268" y="260" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1213.997@67.27.1213.997" timestamp="1580123249631" />
     <state x="441" y="444" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1580092199317">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="441" y="444" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1213.997@67.27.1213.997" timestamp="1580092199317" />
-    <state x="321" y="255" width="704" height="538" key="find.popup" timestamp="1580117971498">
+    <state x="321" y="255" width="704" height="538" key="find.popup" timestamp="1580195982197">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="321" y="255" width="704" height="538" key="find.popup/67.27.1213.997@67.27.1213.997" timestamp="1580117971498" />
+    <state x="321" y="255" width="704" height="538" key="find.popup/67.27.1213.997@67.27.1213.997" timestamp="1580195982197" />
     <state x="393" y="336" width="550" height="377" key="jetbrains.nodejs.interpreters-dialog" timestamp="1579772921916">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="393" y="336" width="550" height="377" key="jetbrains.nodejs.interpreters-dialog/67.27.1213.997@67.27.1213.997" timestamp="1579772921916" />
-    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1580035309575">
+    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1580201988379">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup/67.27.1213.997@67.27.1213.997" timestamp="1580035309575" />
+    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup/67.27.1213.997@67.27.1213.997" timestamp="1580201988379" />
   </component>
 </project>
