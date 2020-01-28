@@ -7,32 +7,53 @@ router.route('/').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
-/*router.route('/checkValidity/:username')
+router.route('/checkValidity/:username')
     .get(function (req, res) {
-            const regex = new RegExp(req.params.username, 'i')
-                , query = {username: regex};
+            let username = req.params.username;
+            let isValid = false;
+            // if (username.isEmpty()) res.json({valid: isValid});
+            const query = {username: username};
 
             User.find(query, function (err, users) {
-                let isExist = true;
                 if (err) {
-                    console.log(err);
-                    isExist = false;
+                    isValid = true;
                 } else {
-                    console.log(users)
+                    isValid = users.length <= 0;
                 }
-                res.json({valid: !isExist})
+                res.json({valid: isValid})
             })
         }
-    );*/
+    );
 
 router.route('/add').post((req, res) => {
     const username = req.body.username;
 
-    const newUser = new User({username});
-
-    newUser.save()
-        .then(() => res.json('User added!'))
-        .catch(err => res.status(400).json('Error: ' + err));
+    //checking if requested new username is valid
+    if (username) {
+        const query = {username: username};
+        User.find(query, function (err, users) {
+            if (err) {
+                res.json({status: 500, success: false, message: 'Internal server error!', errorMessage: err})
+            } else {
+                if (users.length <= 0) {
+                    //proceed to create new username
+                    const newUser = new User({username});
+                    newUser.save()
+                        .then(() => res.json({status: 200, success: true, message: 'User added!'}))
+                        .catch(err => res.json({
+                            status: 500,
+                            success: false,
+                            message: 'Internal server error!',
+                            errorMessage: err
+                        }));
+                } else {
+                    res.json({status: 409, success: false, message: 'Username is already taken!'})
+                }
+            }
+        });
+    } else {
+        res.json({status: 400, success: false, message: 'Username cannot be empty!'})
+    }
 });
 
 module.exports = router;
