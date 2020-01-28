@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa06dd36-4a47-40ec-a9a1-3323e280da0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/musta.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/musta.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-exercise.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/create-exercise.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/backend/routes/users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/exercises-list.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/exercises-list.component.js" afterDir="false" />
     </list>
     <list id="d370a355-04ad-4f6b-bcb3-cc62e66832f2" name="Unnecessary" comment="">
       <change beforePath="$PROJECT_DIR$/learn-mern/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/backend/.env" afterDir="false" />
@@ -100,7 +97,7 @@
       <workItem from="1580178493380" duration="3526000" />
       <workItem from="1580186349048" duration="6071000" />
       <workItem from="1580198102098" duration="2414000" />
-      <workItem from="1580201490931" duration="1684000" />
+      <workItem from="1580201490931" duration="6580000" />
     </task>
     <task id="LOCAL-00001" summary="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added">
       <created>1580036099248</created>
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580123247833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create new user (without checking duplicate username) and new exercise (fetching user-list from react)">
+      <created>1580204747432</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580204747432</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +149,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added" />
     <MESSAGE value="Web app added using React :: no description for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Web app added using React :: no description for now" />
+    <MESSAGE value="Create new user (without checking duplicate username) and new exercise (fetching user-list from react)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new user (without checking duplicate username) and new exercise (fetching user-list from react)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -175,10 +180,10 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1580035260828" />
-    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580123247727">
+    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580204747173">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580123247727" />
+    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580204747173" />
     <state x="167" y="125" width="1013" height="799" key="DiffContextDialog" timestamp="1580201593910">
       <screen x="67" y="27" width="1213" height="997" />
     </state>

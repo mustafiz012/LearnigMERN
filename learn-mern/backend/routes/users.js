@@ -7,6 +7,24 @@ router.route('/').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+/*router.route('/checkValidity/:username')
+    .get(function (req, res) {
+            const regex = new RegExp(req.params.username, 'i')
+                , query = {username: regex};
+
+            User.find(query, function (err, users) {
+                let isExist = true;
+                if (err) {
+                    console.log(err);
+                    isExist = false;
+                } else {
+                    console.log(users)
+                }
+                res.json({valid: !isExist})
+            })
+        }
+    );*/
+
 router.route('/add').post((req, res) => {
     const username = req.body.username;
 
