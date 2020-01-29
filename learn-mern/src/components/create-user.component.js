@@ -19,6 +19,7 @@ export default class CreateUsers extends Component {
         let username = e.target.value;
         // console.log('Username: ' + username);
 
+        /*//checking if username already exists or not
         if (username && !this.isRequested) {
             this.isRequested = true;
             Axios.get('http://localhost:5000/users/checkValidity/' + username)
@@ -31,7 +32,7 @@ export default class CreateUsers extends Component {
                 .catch((error) => {
                     console.log(error)
                 });
-        }
+        }*/
 
         this.setState({
             username: username

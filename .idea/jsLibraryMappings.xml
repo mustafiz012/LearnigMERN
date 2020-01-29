@@ -3,6 +3,5 @@
   <component name="JavaScriptLibraryMappings">
     <file url="PROJECT" libraries="{jquery-3.3.1}" />
     <includedPredefinedLibrary name="HTTP Response Handler" />
-    <includedPredefinedLibrary name="Node.js Core" />
   </component>
 </project>
