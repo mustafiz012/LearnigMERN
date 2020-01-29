@@ -29,7 +29,7 @@ router.route('/add').post((req, res) => {
     const username = req.body.username;
 
     //checking if requested new username is valid
-    if (username) {
+    if (username && username.length >= 3) {
         const query = {username: username};
         User.find(query, function (err, users) {
             if (err) {
@@ -52,7 +52,11 @@ router.route('/add').post((req, res) => {
             }
         });
     } else {
-        res.json({status: 400, success: false, message: 'Username cannot be empty!'})
+        if (username.length < 3) {
+            res.json({status: 400, success: false, message: 'Number of character must be 3 or more.'})
+        } else {
+            res.json({status: 400, success: false, message: 'Username cannot be empty!'})
+        }
     }
 });
 
