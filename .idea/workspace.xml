@@ -2,14 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa06dd36-4a47-40ec-a9a1-3323e280da0e" name="Default Changelist" comment="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/exercise.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/exercises.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/create-exercise.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/create-user.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/edit-exercise.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/exercises-list.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/navbar.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/edit-exercise.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/src/components/edit-exercise.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/models/exercise.model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/models/user.model.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/routes/exercises.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/backend/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-exercise.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/create-user.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/edit-exercise.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/exercises-list.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/components/navbar.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-mern/src/setupTests.js" beforeDir="false" />
     </list>
-    <list id="c3cbceba-10ae-4593-a1e6-b1adc80a838d" name="Unnecessary" comment="">
-      <change beforePath="$PROJECT_DIR$/learn-mern/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/learn-mern/backend/.env" afterDir="false" />
-    </list>
+    <list id="c3cbceba-10ae-4593-a1e6-b1adc80a838d" name="Unnecessary" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +115,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/learn-mern/backend/server.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -99,6 +156,7 @@
       <workItem from="1580198102098" duration="2414000" />
       <workItem from="1580201490931" duration="6580000" />
       <workItem from="1580236509603" duration="2102000" />
+      <workItem from="1580309104345" duration="954000" />
     </task>
     <task id="LOCAL-00001" summary="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added">
       <created>1580036099248</created>
