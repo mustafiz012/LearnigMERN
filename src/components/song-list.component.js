@@ -106,7 +106,7 @@ export default class SongList extends Component {
                         <thead className="table-light">
                         <tr>
                             <th>Song Title</th>
-                            <th width={300}>Lyrics (Optional)</th>
+                            <th>Lyrics (Optional)</th>
                             <th>Artist</th>
                             <th>Release Year</th>
                         </tr>

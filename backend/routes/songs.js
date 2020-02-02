@@ -28,12 +28,12 @@ router.route('/getSongList/:searchString')
                     $regex: req.params.searchString,
                     $options: 'i'
                 }
-            }, /*{
+            }, {
                 year: {
                     $regex: req.params.searchString,
                     $options: 'i'
                 }
-            }*/]
+            }]
         };
 
         const query = {year: req.params.searchString};
