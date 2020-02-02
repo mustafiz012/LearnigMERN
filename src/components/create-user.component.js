@@ -7,15 +7,20 @@ export default class CreateUsers extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeUsername = this.onChangeUsername.bind(this);
+        //listeners
+        this.onUsernameChanged = this.onUsernameChanged.bind(this);
+        this.onNameChanged = this.onNameChanged.bind(this);
+        this.onEmailChanged = this.onEmailChanged.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
-            username: ''
+            username: '',
+            name: '',
+            email: '',
         }
     }
 
-    onChangeUsername(e) {
+    onUsernameChanged(e) {
         let username = e.target.value;
         // console.log('Username: ' + username);
 
@@ -39,12 +44,26 @@ export default class CreateUsers extends Component {
         });
     }
 
+    onNameChanged(e) {
+        this.setState({
+            name: e.target.value
+        });
+    }
+
+    onEmailChanged(e) {
+        this.setState({
+            email: e.target.value
+        });
+    }
+
     onSubmit(e) {
         e.preventDefault();
 
         let username = this.state.username;
         const user = {
             username: username,
+            name: this.state.name,
+            email: this.state.email
         };
 
         if (username.length >= 3) {
@@ -55,7 +74,9 @@ export default class CreateUsers extends Component {
                     alert(res.data.message);
                     if (statusCode === 200) {
                         this.setState({
-                            username: ''
+                            username: '',
+                            name: '',
+                            email: ''
                         })
                     } else if (statusCode === 500) {
                         console.log(res.data.errorMessage)
@@ -81,7 +102,23 @@ export default class CreateUsers extends Component {
                             required
                             className="form-control"
                             value={this.state.username}
-                            onChange={this.onChangeUsername}
+                            onChange={this.onUsernameChanged}
+                        />
+                        <label>Name: </label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            value={this.state.name}
+                            onChange={this.onNameChanged}
+                        />
+                        <label>Email: </label>
+                        <input
+                            type="text"
+                            required
+                            className="form-control"
+                            value={this.state.email}
+                            onChange={this.onEmailChanged}
                         />
                     </div>
 

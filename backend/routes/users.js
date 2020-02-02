@@ -7,6 +7,12 @@ router.route('/').get((req, res) => {
         .catch(err => res.status(400).json('Error: ' + err));
 });
 
+router.route('/getUserList').get((req, res) => {
+    User.find()
+        .then(users => res.json(users))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
 router.route('/checkValidity/:username')
     .get(function (req, res) {
             let username = req.params.username;
@@ -25,8 +31,16 @@ router.route('/checkValidity/:username')
         }
     );
 
+router.route('/delete/:id').delete((req, res) => {
+    User.findByIdAndDelete(req.params.id)
+        .then(() => res.json('User deleted.'))
+        .catch(err => res.status(400).json('Error: ' + err));
+});
+
 router.route('/add').post((req, res) => {
     const username = req.body.username;
+    const name = req.body.name;
+    const email = req.body.email;
 
     //checking if requested new username is valid
     if (username && username.length >= 3) {
@@ -37,7 +51,7 @@ router.route('/add').post((req, res) => {
             } else {
                 if (users.length <= 0) {
                     //proceed to create new username
-                    const newUser = new User({username});
+                    const newUser = new User({username, name, email});
                     newUser.save()
                         .then(() => res.json({status: 200, success: true, message: 'User added!'}))
                         .catch(err => res.json({

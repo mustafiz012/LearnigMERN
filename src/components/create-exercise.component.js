@@ -7,10 +7,10 @@ export default class CreateExercise extends Component {
     constructor(props) {
         super(props);
 
-        this.onChangeUsername = this.onChangeUsername.bind(this);
-        this.onChangeDescription = this.onChangeDescription.bind(this);
-        this.onChangeDuration = this.onChangeDuration.bind(this);
-        this.onChangeDate = this.onChangeDate.bind(this);
+        this.onUsernameChanged = this.onUsernameChanged.bind(this);
+        this.onDescriptionChanged = this.onDescriptionChanged.bind(this);
+        this.onDurationChanged = this.onDurationChanged.bind(this);
+        this.onDateChanged = this.onDateChanged.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
         this.state = {
@@ -34,25 +34,25 @@ export default class CreateExercise extends Component {
             })
     }
 
-    onChangeUsername(e) {
+    onUsernameChanged(e) {
         this.setState({
             username: e.target.value
         });
     }
 
-    onChangeDescription(e) {
+    onDescriptionChanged(e) {
         this.setState({
             description: e.target.value
         });
     }
 
-    onChangeDuration(e) {
+    onDurationChanged(e) {
         this.setState({
             duration: e.target.value
         });
     }
 
-    onChangeDate(date) {
+    onDateChanged(date) {
         this.setState({
             date: date
         })
@@ -87,7 +87,7 @@ export default class CreateExercise extends Component {
                                 required
                                 className="form-control"
                                 value={this.state.username}
-                                onChange={this.onChangeUsername}>
+                                onChange={this.onUsernameChanged}>
                             {
                                 this.state.users.map(function (user) {
                                     return <option
@@ -104,7 +104,7 @@ export default class CreateExercise extends Component {
                                required
                                className="form-control"
                                value={this.state.description}
-                               onChange={this.onChangeDescription}
+                               onChange={this.onDescriptionChanged}
                         />
                     </div>
                     <div className="form-group">
@@ -113,7 +113,7 @@ export default class CreateExercise extends Component {
                             type="text"
                             className="form-control"
                             value={this.state.duration}
-                            onChange={this.onChangeDuration}
+                            onChange={this.onDurationChanged}
                         />
                     </div>
                     <div className="form-group">
@@ -121,7 +121,7 @@ export default class CreateExercise extends Component {
                         <div>
                             <DatePicker
                                 selected={this.state.date}
-                                onChange={this.onChangeDate}
+                                onChange={this.onDateChanged}
                             />
                         </div>
                     </div>
