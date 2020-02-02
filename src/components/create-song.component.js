@@ -50,11 +50,12 @@ export default class CreateSong extends Component {
         let title = this.state.title;
         const song = {
             title: title,
+            lyrics: this.state.lyrics,
             artist: this.state.artist,
             year: this.state.year
         };
 
-        if (title.length >= 3) {
+        if (title.length >= 1) {
             Axios.post('http://localhost:5000/songs/add', song)
                 .then(res => {
                     console.log(res.data);
@@ -63,6 +64,7 @@ export default class CreateSong extends Component {
                     if (statusCode === 200) {
                         this.setState({
                             title: '',
+                            lyrics: '',
                             artist: '',
                             year: ''
                         })
@@ -74,7 +76,7 @@ export default class CreateSong extends Component {
                     console.log(error)
                 });
         } else {
-            alert('Number of character must be 3 or more.');
+            alert('Title cannot be empty.');
         }
     }
 

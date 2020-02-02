@@ -9,6 +9,7 @@ import CreateExercise from "./components/create-exercise.component";
 import CreateUser from "./components/create-user.component";
 import CreateSong from "./components/create-song.component";
 import UserList from "./components/user-list.component";
+import SongList from "./components/song-list.component";
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
                 <Route path="/create" component={CreateExercise}/>
                 <Route path="/userList" component={UserList}/>
                 <Route path="/user" component={CreateUser}/>
+                <Route path="/songList" component={SongList}/>
                 <Route path="/create_song" component={CreateSong}/>
             </div>
         </Router>

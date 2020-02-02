@@ -1,17 +1,53 @@
 const router = require('express').Router();
 let Song = require('../models/song.model');
 
-router.route('/').get((req, res) => {
-    Song.find()
-        .then(songs => res.json(songs))
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+router.route('/')
+    .get((req, res) => {
+        Song.find()
+            .then(songs => res.json(songs))
+            .catch(err => res.status(400).json('Error: ' + err));
+    });
 
-router.route('/getSongList').get((req, res) => {
-    Song.find()
-        .then(songs => res.json(songs))
-        .catch(err => res.status(400).json('Error: ' + err));
-});
+router.route('/getSongList')
+    .get((req, res) => {
+        Song.find()
+            .then(songs => res.json(songs))
+            .catch(err => res.status(400).json('Error: ' + err));
+    });
+
+router.route('/getSongList/:searchString')
+    .get((req, res) => {
+        const multiQuery = {
+            $or: [{
+                title: {
+                    $regex: req.params.searchString,
+                    $options: 'i'
+                }
+            }, {
+                artist: {
+                    $regex: req.params.searchString,
+                    $options: 'i'
+                }
+            }, /*{
+                year: {
+                    $regex: req.params.searchString,
+                    $options: 'i'
+                }
+            }*/]
+        };
+
+        const query = {year: req.params.searchString};
+        console.log(query);
+        console.log(multiQuery);
+
+        Song.find(multiQuery, function (err, songs) {
+            if (err) {
+                res.json([])
+            } else {
+                res.json(songs)
+            }
+        });
+    });
 
 router.route('/delete/:id').delete((req, res) => {
     Song.findByIdAndDelete(req.params.id)
@@ -26,7 +62,7 @@ router.route('/add').post((req, res) => {
     const year = req.body.year;
 
     //checking if requested new title is valid
-    if (title && title.length >= 3) {
+    if (title) {
         const query = {title: title};
         Song.find(query, function (err, users) {
             if (err) {
@@ -49,11 +85,7 @@ router.route('/add').post((req, res) => {
             }
         });
     } else {
-        if (title.length < 3) {
-            res.json({status: 400, success: false, message: 'Number of character must be 3 or more.'})
-        } else {
-            res.json({status: 400, success: false, message: 'Field cannot be empty!'})
-        }
+        res.json({status: 400, success: false, message: 'Title cannot be empty!'})
     }
 });
 

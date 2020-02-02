@@ -7,8 +7,7 @@ const songSchema = new Schema({
         type: String,
         required: true,
         unique: true,
-        trim: true,
-        minlength: 3
+        trim: true
     },
     lyrics: {
         type: String,

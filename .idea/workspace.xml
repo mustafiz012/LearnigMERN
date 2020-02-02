@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa06dd36-4a47-40ec-a9a1-3323e280da0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/song.model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/routes/songs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/create-song.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/song-list.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/song.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/song.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/songs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/songs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/create-song.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/create-song.component.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/navbar.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.component.js" afterDir="false" />
     </list>
     <list id="c3cbceba-10ae-4593-a1e6-b1adc80a838d" name="Unnecessary" comment="">
@@ -61,7 +61,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -69,8 +69,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/backend/routes" />
       <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/backend/routes" />
       <recent name="$PROJECT_DIR$/backend/models" />
       <recent name="$PROJECT_DIR$/learn-mern/src/components" />
       <recent name="$PROJECT_DIR$/learn-mern2" />
@@ -103,7 +103,7 @@
       <workItem from="1580236509603" duration="2102000" />
       <workItem from="1580309104345" duration="954000" />
       <workItem from="1580355060447" duration="6055000" />
-      <workItem from="1580615806577" duration="13827000" />
+      <workItem from="1580615806577" duration="23152000" />
     </task>
     <task id="LOCAL-00001" summary="This commit contains below changes:&#10;&#10;1. Necessary modules added &#10;2. Model implemented using mongoose&#10;3. Add/Fetch functionality added">
       <created>1580036099248</created>
@@ -133,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580626303939</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="*New table added (Song) with create functionality">
+      <created>1580631872167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580631872167</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +151,16 @@
   </component>
   <component name="UpdateCopyrightCheckinHandler">
     <option name="UPDATE_COPYRIGHT" value="true" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -164,7 +181,8 @@
     <MESSAGE value="Web app added using React :: no description for now" />
     <MESSAGE value="Create new user (without checking duplicate username) and new exercise (fetching user-list from react)" />
     <MESSAGE value="1. Showing user list with 'delete' action&#10;2. Refinement for some cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Showing user list with 'delete' action&#10;2. Refinement for some cases" />
+    <MESSAGE value="*New table added (Song) with create functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="*New table added (Song) with create functionality" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -195,10 +213,10 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="406" y="273" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.997@67.27.1213.997" timestamp="1580035260828" />
-    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580626303823">
+    <state x="325" y="135" width="860" height="807" key="CommitChangelistDialog2" timestamp="1580631872099">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
-    <state x="238" y="121" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580626303823" />
+    <state x="325" y="135" width="860" height="807" key="CommitChangelistDialog2/67.27.1213.997@67.27.1213.997" timestamp="1580631872099" />
     <state x="167" y="125" width="1013" height="799" key="DiffContextDialog" timestamp="1580631815453">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
@@ -293,19 +311,19 @@
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="441" y="444" width="454" height="160" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1213.997@67.27.1213.997" timestamp="1580615840597" />
-    <state x="321" y="255" width="916" height="538" key="find.popup" timestamp="1580630110095">
+    <state x="321" y="255" width="916" height="538" key="find.popup" timestamp="1580638503105">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="322" y="188" width="892" height="536" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1580236957035" />
-    <state x="321" y="255" width="916" height="538" key="find.popup/67.27.1213.997@67.27.1213.997" timestamp="1580630110095" />
+    <state x="321" y="255" width="916" height="538" key="find.popup/67.27.1213.997@67.27.1213.997" timestamp="1580638503105" />
     <state x="393" y="336" width="550" height="377" key="jetbrains.nodejs.interpreters-dialog" timestamp="1579772921916">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="393" y="336" width="550" height="377" key="jetbrains.nodejs.interpreters-dialog/67.27.1213.997@67.27.1213.997" timestamp="1579772921916" />
-    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1580627404147">
+    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup" timestamp="1580636210081">
       <screen x="67" y="27" width="1213" height="997" />
     </state>
     <state x="154" y="125" width="851" height="561" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1580223007039" />
-    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup/67.27.1213.997@67.27.1213.997" timestamp="1580627404147" />
+    <state x="29" y="245" width="672" height="678" key="search.everywhere.popup/67.27.1213.997@67.27.1213.997" timestamp="1580636210081" />
   </component>
 </project>
