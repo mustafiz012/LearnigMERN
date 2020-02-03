@@ -27,6 +27,7 @@ export default class SongList extends Component {
 
         this.state = {
             songList: [],
+            fullSongList: [],
             searchString: ''
         };
     }
@@ -34,6 +35,7 @@ export default class SongList extends Component {
     componentDidMount() {
         Axios.get('http://localhost:5000/songs/getSongList')
             .then(response => {
+                this.fullSongList = response.data;
                 this.setState({songList: response.data})
             })
             .catch((error) => {
@@ -45,6 +47,13 @@ export default class SongList extends Component {
         this.setState({
             searchString: e.target.value
         });
+
+        const str = e.target.value;
+        if (str.trim().length <= 0) {
+            this.setState({
+                songList: this.fullSongList
+            })
+        }
     }
 
     onSubmit(e) {
@@ -87,7 +96,6 @@ export default class SongList extends Component {
                     <div className="form-group" aria-orientation={"horizontal"}>
                         <input
                             type="text"
-                            required
                             placeholder="Search by Song Title, Artist or Year"
                             className="form-control"
                             value={this.state.searchString}

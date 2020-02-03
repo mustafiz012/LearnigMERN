@@ -17,11 +17,11 @@ router.route('/getSongList')
 
 router.route('/getSongList/:searchString')
     .get((req, res) => {
-        const multiQuery = {
+        const compoundQuery = {
             $or: [{
                 title: {
-                    $regex: req.params.searchString,
-                    $options: 'i'
+                    $regex: req.params.searchString,    //substring which is being matched withing the string
+                    $options: 'i'   //iLike :: any match inside the string
                 }
             }, {
                 artist: {
@@ -36,17 +36,27 @@ router.route('/getSongList/:searchString')
             }]
         };
 
-        const query = {year: req.params.searchString};
+        /*const query = {year: req.params.searchString};
         console.log(query);
-        console.log(multiQuery);
+        console.log(compoundQuery);*/
 
-        Song.find(multiQuery, function (err, songs) {
+        /*Song.find(compoundQuery, function (err, songs) {
             if (err) {
                 res.json([])
             } else {
                 res.json(songs)
             }
-        });
+        });*/
+
+        Song.find(compoundQuery)
+            .sort({year: 'desc'})
+            .exec(function (err, songs) {
+                if (err) {
+                    res.json([])
+                } else {
+                    res.json(songs)
+                }
+            });
     });
 
 router.route('/delete/:id').delete((req, res) => {
